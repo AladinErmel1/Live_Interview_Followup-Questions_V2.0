@@ -42,6 +42,26 @@ http://127.0.0.1:5173
 
 When the app is finished and you want a stable local run, build once with `npm run build` and start it with `npm start`. Then open `http://127.0.0.1:8787`.
 
+## Use from GitHub
+
+Run these commands in a terminal:
+
+```bash
+git clone https://github.com/AladinErmel1/Internal-Audit-Interview-Assistant-V2.0.git
+cd Internal-Audit-Interview-Assistant-V2.0
+npm install
+cp .env.example .env
+npm run dev
+```
+
+Then open:
+
+```text
+http://127.0.0.1:5173
+```
+
+You can either add `OPENAI_API_KEY` to `.env` or enter your OpenAI API key inside the app.
+
 ## Use on Railway
 
 1. Open the Railway app URL in Chrome or Edge.
