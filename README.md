@@ -12,7 +12,7 @@ Local-first web app for live internal-audit interviews. It records interview aud
 6. Use the live auditor chat to ask questions about the conversation and uploaded evidence.
 7. Download the transcript, audit report, and process map when the interview is complete.
 
-Use a trusted Railway app URL. Browser-entered keys are stored locally in the auditor's browser and sent to the app backend only for AI requests.
+Use a trusted Railway app URL. Browser-entered keys are stored locally in the auditor's browser and sent to the app backend only for AI requests. Railway provides the runtime port automatically, so users should open the public Railway URL rather than a localhost URL.
 
 
 ## Local Setup
@@ -41,7 +41,7 @@ You can also leave `OPENAI_API_KEY` empty and enter an API key inside the app. T
 
 ## Run Locally
 
-Use this while improving or running the app locally:
+Use this while improving or running the app locally. The API runs on `http://127.0.0.1:8787` and the Vite app runs on `http://127.0.0.1:5173`.
 
 ```bash
 npm run dev
@@ -54,6 +54,14 @@ http://127.0.0.1:5173
 ```
 
 When the app is finished and you want a stable local run, build once with `npm run build` and start it with `npm start`. Then open `http://127.0.0.1:8787`.
+
+Local defaults are defined in `.env.example`:
+
+```env
+PORT=8787
+HOST=127.0.0.1
+DATA_DIR=./data
+```
 
 ## Use from GitHub
 

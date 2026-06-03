@@ -29,7 +29,12 @@ import {
 
 const app = express();
 const port = Number(process.env.PORT || 8787);
-const host = process.env.HOST || '0.0.0.0';
+const isRailwayRuntime = Boolean(
+  process.env.RAILWAY_PROJECT_ID ||
+  process.env.RAILWAY_SERVICE_ID ||
+  process.env.RAILWAY_ENVIRONMENT_ID
+);
+const host = process.env.HOST || (isRailwayRuntime ? '0.0.0.0' : '127.0.0.1');
 const dataDir = path.resolve(process.env.DATA_DIR || './data');
 
 fs.mkdirSync(dataDir, { recursive: true });
@@ -413,5 +418,7 @@ app.get('*', (_req, res) => {
 });
 
 app.listen(port, host, () => {
-  console.log(`Internal Audit Interview Assistant API running on http://${host}:${port}`);
+  const browserHost = host === '0.0.0.0' ? '127.0.0.1' : host;
+  console.log(`Internal Audit Interview Assistant API listening on ${host}:${port}`);
+  console.log(`Local browser URL: http://${browserHost}:${port}`);
 });
