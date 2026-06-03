@@ -29,7 +29,7 @@ import {
 
 const app = express();
 const port = Number(process.env.PORT || 8787);
-const host = process.env.HOST || '127.0.0.1';
+const host = process.env.HOST || '0.0.0.0';
 const dataDir = path.resolve(process.env.DATA_DIR || './data');
 
 fs.mkdirSync(dataDir, { recursive: true });
