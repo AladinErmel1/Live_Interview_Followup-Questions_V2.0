@@ -74,20 +74,8 @@ You can either add `OPENAI_API_KEY` to `.env` or enter your OpenAI API key insid
 
 Use a trusted Railway app URL. Browser-entered keys are stored locally in the auditor's browser and sent to the app backend only for AI requests.
 
-## Before Publishing Publicly
 
-Run these checks before the first public push:
-
-```bash
-git init
-git status --short
-git add .gitignore .dockerignore .env.example README.md LICENSE package.json package-lock.json railway.json index.html vite.config.js server src
-git status --short
-```
-
-Confirm that `node_modules/`, `dist/`, `.env`, and `data/` are not staged. The local `data/` folder can contain interview recordings, uploads, transcripts, and audit evidence.
-
-## What v1 Supports
+## What the Internal Audit Interview Assistant V2.0 Supports:
 
 - Local interview sessions persisted in SQLite under `data/`.
 - Continuous browser microphone recording in 30-second chunks.
