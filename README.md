@@ -2,6 +2,19 @@
 
 Local-first web app for live internal-audit interviews. It records interview audio, transcribes it with OpenAI, indexes supporting evidence, and displays timed follow-up questions for the auditor from the perspective of an experienced internal auditor.
 
+## Use on Railway
+
+1. Open the Railway app URL in Chrome or Edge.
+2. Enter your OpenAI API key in the `OpenAI API key` field and save it. If the Railway app owner configured a shared server key, this step is not needed.
+3. Create an interview session with the auditee, process, audit area, objective, and follow-up cadence.
+4. Upload relevant audit evidence before or during the interview.
+5. Start recording. The app transcribes the interview and shows 1-2 prioritized follow-up questions at the selected cadence.
+6. Use the live auditor chat to ask questions about the conversation and uploaded evidence.
+7. Download the transcript, audit report, and process map when the interview is complete.
+
+Use a trusted Railway app URL. Browser-entered keys are stored locally in the auditor's browser and sent to the app backend only for AI requests.
+
+
 ## Local Setup
 
 1. Install dependencies:
@@ -61,19 +74,6 @@ http://127.0.0.1:5173
 ```
 
 You can either add `OPENAI_API_KEY` to `.env` or enter your OpenAI API key inside the app.
-
-## Use on Railway
-
-1. Open the Railway app URL in Chrome or Edge.
-2. Enter your OpenAI API key in the `OpenAI API key` field and save it. If the Railway app owner configured a shared server key, this step is not needed.
-3. Create an interview session with the auditee, process, audit area, objective, and follow-up cadence.
-4. Upload relevant audit evidence before or during the interview.
-5. Start recording. The app transcribes the interview and shows 1-2 prioritized follow-up questions at the selected cadence.
-6. Use the live auditor chat to ask questions about the conversation and uploaded evidence.
-7. Download the transcript, audit report, and process map when the interview is complete.
-
-Use a trusted Railway app URL. Browser-entered keys are stored locally in the auditor's browser and sent to the app backend only for AI requests.
-
 
 ## What the Internal Audit Interview Assistant V2.0 Supports:
 
