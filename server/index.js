@@ -419,6 +419,6 @@ app.get('*', (_req, res) => {
 
 app.listen(port, host, () => {
   const browserHost = host === '0.0.0.0' ? '127.0.0.1' : host;
-  console.log(`Internal Audit Interview Assistant API listening on ${host}:${port}`);
+  console.log(`Live_Interview_Followup Questions_V2.0 API listening on ${host}:${port}`);
   console.log(`Local browser URL: http://${browserHost}:${port}`);
 });

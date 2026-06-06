@@ -1,4 +1,4 @@
-# Internal Audit Interview Assistant
+# Live_Interview_Followup Questions_V2.0
 
 Local-first web app for live internal-audit interviews. It records interview audio, transcribes it with OpenAI, indexes supporting evidence, and displays timed follow-up questions for the auditor from the perspective of an experienced internal auditor.
 
@@ -68,8 +68,8 @@ DATA_DIR=./data
 Run these commands in a terminal:
 
 ```bash
-git clone https://github.com/AladinErmel1/Internal-Audit-Interview-Assistant-V2.0.git
-cd Internal-Audit-Interview-Assistant-V2.0
+git clone https://github.com/AladinErmel1/Live_Interview_Followup-Questions_V2.0.git "Live_Interview_Followup Questions_V2.0"
+cd "Live_Interview_Followup Questions_V2.0"
 npm install
 cp .env.example .env
 npm run dev
@@ -83,7 +83,7 @@ http://127.0.0.1:5173
 
 You can either add `OPENAI_API_KEY` to `.env` or enter your OpenAI API key inside the app.
 
-## What the Internal Audit Interview Assistant V2.0 Supports:
+## What Live_Interview_Followup Questions_V2.0 Supports
 
 - Local interview sessions persisted in SQLite under `data/`.
 - Continuous browser microphone recording in 30-second chunks.

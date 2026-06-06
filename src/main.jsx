@@ -622,7 +622,7 @@ function App() {
     <main className={`app-shell ${assistantFullscreen ? 'assistant-fullscreen-mode' : ''}`}>
       <header className="topbar">
         <div>
-          <h1>Internal Audit Interview Assistant</h1>
+          <h1>Live_Interview_Followup Questions_V2.0</h1>
           <p>Live transcription, evidence-aware follow-up questions, and audit notes for auditor-auditee interviews.</p>
         </div>
         <div className="topbar-status">

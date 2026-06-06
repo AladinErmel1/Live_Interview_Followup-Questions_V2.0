@@ -208,7 +208,7 @@ export async function buildTranscriptDocx({ session, transcript }) {
   }
 
   const doc = new Document({
-    creator: 'Internal Audit Interview Assistant',
+    creator: 'Live_Interview_Followup Questions_V2.0',
     title: 'Internal Audit Interview Transcript',
     styles: {
       default: {
@@ -266,7 +266,7 @@ export async function buildAuditReportDocx({ session, report, processMap = null 
   }
 
   const doc = new Document({
-    creator: 'Internal Audit Interview Assistant',
+    creator: 'Live_Interview_Followup Questions_V2.0',
     title: 'Internal Audit Interview Report',
     styles: {
       default: {
@@ -397,7 +397,7 @@ export async function buildProcessMapDocx({ session, processMap }) {
   });
 
   const doc = new Document({
-    creator: 'Internal Audit Interview Assistant',
+    creator: 'Live_Interview_Followup Questions_V2.0',
     title: 'Internal Audit Process Visualization',
     styles: {
       default: {
