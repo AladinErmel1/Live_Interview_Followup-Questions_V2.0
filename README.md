@@ -4,7 +4,7 @@ Local-first web app for live internal-audit interviews. It records interview aud
 
 ## Use on Railway
 
-1. Open the Railway app URL in Chrome or Edge.
+1. Open the Railway app URL in Chrome or Edge: https://internal-audit-interview-assistant-v20-production.up.railway.app/
 2. Enter your OpenAI API key in the `OpenAI API key` field and save it. If the Railway app owner configured a shared server key, this step is not needed.
 3. Create an interview session with the auditee, process, audit area, objective, and follow-up cadence.
 4. Upload relevant audit evidence before or during the interview.
